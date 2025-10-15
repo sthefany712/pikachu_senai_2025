@@ -1,23 +1,104 @@
-:root{ /* O root escoppo global. Ele fala que essas vari[aveis valem no projeto inteiro. No java as variaveis 
-    funcionam dentro da sua funcao e sao criadas p/ que o valor atribuido seja usado diversas vezes */ 
---primary-color: #F5CF06;
---secundary-color:#8E4106; 
+:root {
+    /* O root escoppo global. Ele fala que essas vari[aveis valem no projeto inteiro. No java as variaveis 
+    funcionam dentro da sua funcao e sao criadas p/ que o valor atribuido seja usado diversas vezes */
+    --primary-color: #F5CF06;
+    --secundary-color: #8E4106;
 }
-body{
+
+body {
     height: 100vh;
     background-color: var(--primary-color);
     padding: 70px;
-    font-family: Righteousn,sans-serif;
+    font-family: Righteous, sans-serif;
     /* sans serif é caso nao tenha a fonte */
+    display: flex;
+    flex-direction: column;
 }
-header{
+
+header {
     display: flex;
     align-items: center;
-    gap: 16px; 
+    gap: 16px;
     /* background-color:tomato; Coloquei a cor aqui so pra ver o espaco depois tirei */
 }
+
 header span {
-    font-size: 24px;
+    font-size: 32px;
     color: var(--secundary-color);
 
+}
+
+main {
+    /* background-color: tomato; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    /* faz coluna horizontal */
+}
+
+.sombra {
+    position: absolute;
+    /* perde a referencia do pai */
+    font-size: 400px;
+    color: #ffffff55;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: pink; cor colocada p/ melhor vizualizar */
+    flex-grow: 1;
+    font-size: 300px;
+    color: white;
+    text-shadow: 0 00px 0 black;
+    /* o primeiro vai p/ esquerda, o segundo p/ baixo mas se o valor for negativo ele sobe e o terceiro esfuma*/
+}
+
+.container {
+    height: 154px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 64px;
+    /* background-color: aquamarine; */
+
+}
+
+.descricao h2 {
+    font-size: 64px;
+    color: var(--secundary-color);
+}
+
+.descricao p {
+    font-size: 20px;
+    color: var(--secundary-color);
+    width: 500px;
+}
+
+.container a {
+    width: 400px;
+    height: 100px;
+    background-color: var(--secundary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: white;
+}
+
+.pikachu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+footer {
+    background-color: aqua;
 }
