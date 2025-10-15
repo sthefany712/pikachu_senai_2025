@@ -2,4 +2,5 @@
 --primary-color: #F5CF06;
 --secundary-color:#8E4106; 
 }
-/* O root escoppo global. Ele fala que essas vari[aveis valem no projeto inteiro */
+/* O root escoppo global. Ele fala que essas vari[aveis valem no projeto inteiro. No java as variaveis 
+funcionam dentro da sua funcao e sao criadas p/ que o valor atribuido seja usado diversas vezes */ 
