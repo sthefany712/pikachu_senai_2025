@@ -1,6 +1,23 @@
-:root{ 
+:root{ /* O root escoppo global. Ele fala que essas vari[aveis valem no projeto inteiro. No java as variaveis 
+    funcionam dentro da sua funcao e sao criadas p/ que o valor atribuido seja usado diversas vezes */ 
 --primary-color: #F5CF06;
 --secundary-color:#8E4106; 
 }
-/* O root escoppo global. Ele fala que essas vari[aveis valem no projeto inteiro. No java as variaveis 
-funcionam dentro da sua funcao e sao criadas p/ que o valor atribuido seja usado diversas vezes */ 
+body{
+    height: 100vh;
+    background-color: var(--primary-color);
+    padding: 70px;
+    font-family: Righteousn,sans-serif;
+    /* sans serif é caso nao tenha a fonte */
+}
+header{
+    display: flex;
+    align-items: center;
+    gap: 16px; 
+    /* background-color:tomato; Coloquei a cor aqui so pra ver o espaco depois tirei */
+}
+header span {
+    font-size: 24px;
+    color: var(--secundary-color);
+
+}
