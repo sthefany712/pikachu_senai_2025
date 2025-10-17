@@ -39,7 +39,7 @@ main {
 .sombra {
     position: absolute;
     /* perde a referencia do pai */
-    font-size: 400px;
+    font-size: 26vw;
     color: #ffffff55;
     z-index: 999;
     top: 50%;
@@ -53,7 +53,7 @@ h1 {
     align-items: center;
     /* background-color: pink; cor colocada p/ melhor vizualizar */
     flex-grow: 1;
-    font-size: 300px;
+    font-size: 20vw;
     color: white;
     text-shadow: 0 00px 0 black;
     /* o primeiro vai p/ esquerda, o segundo p/ baixo mas se o valor for negativo ele sobe e o terceiro esfuma*/
@@ -101,4 +101,43 @@ h1 {
 
 footer {
     background-color: aqua;
+    color: var(--secundary-color)
+}
+/* tablet */
+@media(max-width: 768px) {
+    body{
+        padding: 30px;
+    }
+    .sombra{
+        transform: translate(-50%, -180%);
+    }
+    main{
+        justify-content: space-between;
+    }
+    h1{
+        align-items: start;
+        transform: translateY(40%);
+        flex-grow: 0;
+        /* background-color: tomato;  */
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 0;
+    }
+    .descricao p {
+        text-align: center;
+        
+    }
+    footer {
+         display: none; 
+         /* pra desaparecer msm */
+        /* visibility: hidden; */
+    }
+}
+
+/* MODILE */
+@media (max-width: 480px) {
+    /* se for menor que 7 meia 8 faz assim se n faz assim */
 }
